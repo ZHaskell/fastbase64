@@ -338,7 +338,7 @@ size_t chromium_base64_encode(char* dest, const char* str, size_t len)
         *p++ = CHARPAD;
     }
 
-    *p = '\0';
+    // *p = '\0'; don't do this in ZHaskell
     return p - (uint8_t*)dest;
 }
 
